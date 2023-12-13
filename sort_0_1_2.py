@@ -4,12 +4,16 @@ sorting algorithm"""
 def sort_the_arr(arr):
     l = 0 
     h = len(arr) -1 
-    for m in range(len(arr)):
+    m = 0 
+    while m <=h :
         if arr[m] == 0:
-            arr[l] , arr[m] = arr[m], arr[l]
+            arr[l], arr[m] = arr[m], arr[l]
             l += 1
-        if arr[m] == 2:
-            arr[m] , arr[h] = arr[h], arr[m]
-            h -= 1
+            m += 1
+        elif arr[m] == 2:
+            arr[h], arr[m] = arr[m], arr[h]
+            h -= 1 
+        else:
+            m += 1
     return arr
 print(sort_the_arr([0, 1 , 1, 0, 2, 0 , 1, 2, 1, 0]))
