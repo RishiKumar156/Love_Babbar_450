@@ -12,3 +12,7 @@
 	        left += 1
 		    r = max(r,c_l, c_r)
 		return r   
+
+
+
+        """need to find the perfect solution for this program haven't completed it properly yet"""
