@@ -1,0 +1,14 @@
+	def maxProduct(self,arr, n):
+		# code here
+		left = 0 
+		right = -1 
+		r = float('-inf')
+		c_l = 1
+		c_r = 1
+		for i in range(n):
+	        c_l *= arr[left]
+	        c_r *= arr[right]
+	        right -=1
+	        left += 1
+		    r = max(r,c_l, c_r)
+		return r
